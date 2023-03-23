@@ -1,0 +1,15 @@
+LINK:  https://practice.geeksforgeeks.org/problems/quick-left-rotation3806/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=quick-left-rotation
+
+another link : https://practice.geeksforgeeks.org/problems/reversal-algorithm5340/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reversal-algorithm
+
+optimize solution : You can use different language and if there is no reverse function then you can create reverse function.
+
+class Solution{   
+public:
+    void leftRotate(int arr[], int n, int d) {
+        // code here
+        reverse(arr, arr+d);
+        reverse(arr+d, arr+n);
+        reverse(arr, arr+n);
+        
+    }
